@@ -16,7 +16,7 @@ login_link = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.
 login_link.click()
 mail = driver.find_element(By.ID , "id_userLoginId")
 # Give the login mail id
-mail.send_keys("email")
+mail.send_keys("mail")
 password = driver.find_element(By.XPATH, "//input[@type='password']")
 # Give the login password
 password.send_keys("password")
