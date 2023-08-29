@@ -1563,3 +1563,54 @@ the element at the 2nd position (0-based index) in the sorted list.'''
 # print("Consonants:", consonants)
 # print("Vowel count:", vowel_count)
 # print("Consonant count:", consonant_count)
+
+############# Decorators ############
+
+'''Example of using a decorator called str_upper to modify 
+   the behavior of the print_str function. '''
+
+# def str_upper(func):
+#     def inner():
+#         str1 = func()
+#         return str1.upper()
+#
+#     return inner
+#
+#
+# @str_upper
+# def print_str():
+#     return "Hello World"
+#
+#
+# print(print_str())
+
+'''example of using a decorator called div_decorate 
+   to modify the behavior of a div function, which performs division.'''
+
+# def div_decorate(func):
+#     def inner(x, y):
+#         if y == 0:
+#             return "Give proper input"
+#         return func(x, y)
+#
+#     return inner
+#
+# @div_decorate
+# def div(a, b):
+#     return a / b
+#
+# print(div(2, 2))
+
+'''Decorator for example of multiple function'''
+
+# def multiple(func):
+#     def inner(x, y):
+#         if x ==0 or y ==0:
+#             return "Give a valid input"
+#         return func(x, y)
+#     return inner
+#
+# @multiple
+# def mult(a, b):
+#     return a * b
+# print(mult(20, 10))
