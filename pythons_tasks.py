@@ -1614,3 +1614,42 @@ the element at the 2nd position (0-based index) in the sorted list.'''
 # def mult(a, b):
 #     return a * b
 # print(mult(20, 10))
+
+'''Defines two decorator functions, upper_id and split_id, 
+   and applies them to the ordinary function using decoraters'''
+
+# def upper_id(func):
+#     def inner():
+#         str1 = func()
+#         return str1.upper()
+#     return inner
+# def split_id(func):
+#     def wrapper():
+#         str2 = func()
+#         return str2.split()
+#     return wrapper
+#
+# @split_id
+# @upper_id
+# def ordinary():
+#     return "good morning"
+#
+# print(ordinary())
+
+
+'''Defined a nested decorator outer that takes an argument exm. 
+   The outer decorator returns another decorator called upper, 
+   which, in turn, decorates the ordinary function. '''
+
+# def outer(exm):
+#     def upper(func):
+#         def inner():
+#             str1 = func() + " " + exm
+#             return  str1.upper()
+#         return inner
+#     return upper
+#
+# @outer("manohar")
+# def ordinary():
+#     return "good morning"
+# print(ordinary())
