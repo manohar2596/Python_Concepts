@@ -1653,3 +1653,30 @@ the element at the 2nd position (0-based index) in the sorted list.'''
 # def ordinary():
 #     return "good morning"
 # print(ordinary())
+
+
+"""Implementing a rotation of a list to the right by k positions"""
+#Method 1
+'''
+L = [1,2,3,4,5]
+k = 2
+output = []
+
+for i in range(len(L) - k, len(L)):
+    output.append(L[i])
+for i in range(0, len(L) - k):
+    output.append(L[i])
+
+print(output)
+
+#Method 2
+
+from collections import deque
+
+L = [1,2,3,4,5]
+k = 2
+output = deque(L)
+output.rotate(k)
+L = list(output)
+print(L)
+'''
