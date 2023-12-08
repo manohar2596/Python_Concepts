@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ scissor_id }}</title>
+    <style>
+        /* Add any custom styles here */
+    </style>
+</head>
+<body>
+    <h1>{{ scissor_id }}</h1>
+    <div>
+        <img src="{{ url_for('static', filename='scissors/crafting-scissors-1.jpg') }}" alt="{{ scissor_id }} Image">
+
+    </div>
+    <div>
+        <h2>Product Details</h2>
+        <p>Description: Add a detailed description here.</p>
+        <p>Price: $500</p>
+        <p>Warranty: 1 year</p>
+        <p>Material: Iron plates</p>
+        <p>Usage: Tree cutting</p>
+    </div>
+</body>
+</html>
