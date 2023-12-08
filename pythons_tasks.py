@@ -1,3 +1,5 @@
+'''Certainly! Here's a Python program that defines a binary tree using the
+Node class and then prints all the leaf nodes of the tree:'''
 
 # class Node:
 #     def __init__(self, data):
@@ -30,6 +32,9 @@
 # print_leaf_nodes(root)
 
 
+'''Defines a Python function called is_unique_string that checks 
+   if a given input string contains only unique characters. 
+   Here's how the code works:'''
 
 # def is_unique_string(input_string):
 #     # Create a set to store unique characters
@@ -52,6 +57,13 @@
 # else:
 #     print("The string contains duplicate characters.")
 
+
+'''Defines a Python function called find_missing_number that
+   is used to find a missing number in a sequence of 
+   consecutive numbers. Here's how the code works:'''
+
+# Method 1
+
 # def find_missing_number(numbers):
 #     n = len(numbers) + 1
 #     expected_sum = n * (n + 1) // 2
@@ -66,6 +78,7 @@
 # missing_num = find_missing_number(input_numbers)
 # print("The missing number is:", missing_num)
 
+# Method 2
 
 # num = [1,2,3,4,6]
 
@@ -74,6 +87,10 @@
 # actu_num = sum(num)
 # mising_num = exp_num - actu_num
 # print(mising_num)
+
+'''Defines a Python function called is_parentheses_balanced
+   that checks if a given input string contains balanced 
+   parentheses. Here's how the code works:'''
 
 # def is_parentheses_balanced(input_string):
 #     stack = []
@@ -100,6 +117,10 @@
 #     print("Parentheses are not balanced.")
 
 
+'''Defines a Python function called check_substring_match
+   that checks if a given substring exists in a string 
+   in the same order as the characters appear in the
+   substring. Here's how the code works:'''
 
 # def check_substring_match(string, substring):
 #     string_index = 0
@@ -127,12 +148,17 @@
 # else:
 #     print("Fail")
 
+'''using Python's socket module to obtain the 
+   IP address associated with the local host (your computer).'''
 
 # import socket
 
 # ipaddr = socket.gethostbyname(socket.gethostname())
 # print(ipaddr)
 
+'''Determine whether a given string is a palindrome'''
+
+# Method 1
 
 # def palindrom(string):
 #     palin = string[::-1]
@@ -141,15 +167,7 @@
 #     print("No")
 # palindrom("madams")
 
-
-# str = "shteyfhhgask"
-
-# rev_str =  range(len(str) -1, -1 ,-1)
-# rev = ""
-# for i in rev_str:
-#     rev += str[i]
-# print(rev)
-
+# Method 2
 
 # def is_palindrome(string):
 #     # Remove spaces and convert to lowercase
@@ -165,6 +183,20 @@
 # else:
 #     print("The string is not a palindrome.")
 
+'''Reverse a string'''
+
+# str = "shteyfhhgask"
+
+# rev_str =  range(len(str) -1, -1 ,-1)
+# rev = ""
+# for i in rev_str:
+#     rev += str[i]
+# print(rev)
+
+'''Defines a Python function called remove_special_chars
+   that removes special characters from a given string 
+   and converts uppercase letters to lowercase. 
+   Here's how the code works:'''
 
 # def remove_special_chars(string):
 #     special_chars = [",", ":", "!", "@", "#"]
@@ -185,6 +217,9 @@
 # cleaned_text = remove_special_chars(text)
 # print(cleaned_text)
 
+'''Defines two functions, factorial and factorial_series,
+   to calculate and print factorial values of numbers in
+   a series. Here's how the code works:'''
 
 # def factorial(n):
 #     if n == 0:
@@ -199,6 +234,8 @@
 # # Example usage:
 # factorial_series(4)
 
+'''Defines a Python function called is_prime to check
+   if a given number is prime or not. Here's how the code works:'''
 
 # def is_prime(number):
 #     if number < 2:
@@ -215,6 +252,8 @@
 # else:
 #     print(f"{num} is not a prime number.")
 
+'''Appears to be an implementation of a function called
+   is_anagram that checks if two input strings are anagrams of each other'''
 
 # def is_anagram(str1, str2):
 #     return sorted(str1.lower()) == sorted(str2.lower())
@@ -225,6 +264,12 @@
 #     print("The strings are anagrams.")
 # else:
 #     print("The strings are not anagrams.")
+
+'''Performs a sorting operation on the list L using 
+   the bubble sort algorithm after it has been initially
+   sorted with the sort() method.'''
+
+# Method 1
 
 # L1 = [3,5,9]
 # L2 = [4,5,6]
@@ -248,6 +293,7 @@
 
 # print(L)
 
+# Method 2
 
 # L1 = [1,7,2,3,6]
 # L2 = [9,5,8,4,0]
@@ -265,6 +311,9 @@
 
 # print(L3)
 
+'''Defines a function called fun that takes a string as input,
+   removes specific special characters (",", ":", "!") from 
+   the string, and then converts the resulting string to lowercase.'''
 
 # def fun(string):
 #     special_char = [",", ":", "!"]
@@ -275,6 +324,11 @@
 #     print(result.lower())
 
 # fun("h,ello, :Manu!")
+
+'''Defines a Python function called asci_fun that takes
+   an input string and returns a new string where all 
+   uppercase letters are converted to lowercase, 
+   and non-alphabetic characters are removed. '''
 
 # def asci_fun(input_string):
 #     result = ""
@@ -290,6 +344,8 @@
 # result = asci_fun(input_string)
 # print(result)
 
+'''converts any uppercase alphabetic characters to 
+   lowercase while preserving non-alphabetic characters.'''
 
 # str = "Hello! , Ram:"
 
@@ -303,6 +359,9 @@
 #             result += i
 # print(result) 
 
+'''Prints the command-line arguments passed to the script.
+   Prints the current working directory.
+   Prints platform information.'''
 
 # import sys
 # import os
@@ -324,11 +383,7 @@
 # if __name__ == '__main__':
 #     main()
 
-
-# import socket
-# ip = socket.gethostbyname(socket.gethostname())
-# print(ip)
-
+'''calculates the missing number in a sequence of numbers'''
 
 # num = [1,2,3,5,6]
 # n = len(num) + 1
@@ -339,19 +394,18 @@
 # missi_num = exp_num - acut_num
 # print(missi_num)
 
-# import random
+'''calculate the factorial of a number.'''
 
-# num = random.randint(1, 10)
-# print(num)
-
-# def factiorial(num):
+# def factorial(num):
 #     if num == 0 or num == 1:
 #         return 1
 #     else:
-#         return num * factiorial(num - 1)
-        
-# print(factiorial(5))
+#         return num * factorial(num - 1)
 
+# print(factorial(5))
+
+'''Generates a list of odd numbers from 1 to 49, shuffles 
+   the list, and then pops a random odd number from the list.'''
 
 # import random
 # odd_num = []
@@ -363,14 +417,20 @@
 # print(random_odd)
 # print(odd_num)
 
+'''Takes a file path as an argument. This function opens the 
+   file located at the specified path, reads its content line
+   by line, and counts the occurrences of the letter "e" in each line. 
+   It then prints the total count of "e" in the entire file.'''
+
 # def fun_file(path):
 #     count = 0
 #     with open(path, "r") as f:
 #         for i in f:
 #             count += i.count("e")
 #     print(count)
-# fun_file("C:\\Users\\ManoharK-2768\\Desktop\\file_01.txt")
+# fun_file("File path")
 
+'''reverses a given string.'''
 
 # str = "adlnsajbackjb"
 # rev_str = ""
@@ -378,6 +438,8 @@
 #     rev_str += str[i]
 # print(rev_str)
 
+'''Defines two functions, has_duplicat_lines and count_lines, 
+   to check for and count lines with duplicate words in a file.'''
 
 # def has_duplicat_lines(line):
 #     word = line.strip().split()
@@ -393,81 +455,65 @@
 #     print(count)
 
 
-# count_lines("C:\\Users\\ManoharK-2768\\Desktop\\file_01.txt")
+# count_lines("File path")
+
+'''Defines a function is_prime to check if a number 
+   is prime and another function print_prime_num to print 
+   prime numbers up to a given limit. When you call print_prime_num(100), 
+   it prints the prime numbers from 2 to 100.'''
 
 # def is_prime(num):
 #     if num < 2:
-#         print(False)
+#         return False
 #     for i in range(2, int(num ** 0.5) + 1):
 #         if num % i == 0:
-#             print(False)
-#     print(True)
+#             return False
+#     return True
+
 # def print_prime_num(n):
 #     p_num = []
 #     for i in range(2, n+1):
 #         if is_prime(i):
-#             p_num.append(n)
+#             p_num.append(i)
 #     print(p_num)
 
 # print_prime_num(100)
 
-# def is_prime(num):
-#     if num < 2:
-#         return False
-#     for i in range(2, int(num ** 0.5) + 1):
-#         if num % i == 0:
-#             return False
-#     return True
-# def print_prime_num(n):
-#     prime_num = []
-#     for i in range(2, n+1):
-#         if is_prime(i):
-#             prime_num.append(i)
-#     print(prime_num)
-# print_prime_num(50)
 
+'''Finding duplicate numbers in a list and creating a list of unique numbers. '''
 
-# def is_prime(num):
-#     if num < 2:
-#         return False
-#     for i in range(2, int(num ** 0.5) + 1):
-#         if num % i == 0:
-#             return False
-#     return True
-# def print_prime_num(n):
-#     prime_num = []
-#     for i in range(2, n+1):
-#         if is_prime(i):
-#             prime_num.append(i)
-#     print(prime_num)
-
-# print_prime_num(100)
-
+# Section 1: Finding Duplicate Numbers
 
 # num = [1,3,2,3,4,6,5,7,8,9,1,1]
 # dup_num = []
-OAOA# for i in num:
+# for i in num:
 #     if num.count(i) > 1 and i not in dup_num:
-OA#         dup_num.append(i)
+#         dup_num.append(i)
 # print(dup_num)
 
-OA# num = [1,2,3,4,5,2,6,7,5,9]
+# Section 2: Creating a List of Unique Numbers
 
-OA# dup_num = []
-OA
+# num = [1,2,3,4,5,2,6,7,5,9]
+
+# dup_num = []
+
 # for i in num:
 #     if i not in dup_num:
-OA#         dup_num.append(i)
+#         dup_num.append(i)
 # print(dup_num)
-OA
+
+'''Merges two dictionaries, d1 and d2, into a new 
+   dictionary d12 such that common keys have their values 
+   combined into lists, and unique keys are added directly.'''
+
 # d1 = {"a": 1, "b": 2, "c": 3}
-OA# d2 = {"c": 4, "d": 5, "e": 6}
+# d2 = {"c": 4, "d": 5, "e": 6}
 
 # d12 = {}
 
 # for key, value in d1.items():
 #     if key in d2:
-OA#         d12[key] = [value, d2[key]]
+#         d12[key] = [value, d2[key]]
 #     else:
 #         d12[key] = value
 # for key, value in d2.items():
@@ -475,6 +521,7 @@
 #         d12[key] = value
 # print(d12)
 
+'''finds and prints the common elements between two lists, list1 and list2. '''
 
 # list1 = [1, 2, 3, 4, 5]
 # list2 = [4, 5, 6, 7, 8]
@@ -485,32 +532,43 @@
 #           common_elements.append(element)
 
 # print(common_elements)
-OAOA
+
+'''sum of all the elements in the list l.'''
+
 # l =[1,2,3,4,5]
-OA# l1 = 0
+# l1 = 0
 # for i in l:
 #     l1 += i
-OA    
-OA# print(l1)
 
-OA# str1 = "silent"
+# print(l1)
+
+'''checking whether two strings, str1 and str2, are anagrams of each other.'''
+
+# str1 = "silent"
 # str2 = "lsten"
-OAOA
-OA# if len(str1) != len(str2):
-OA#     print(False)
-OA# str1 = sorted(str1.lower()) 
-OA# str2 = sorted(str2.lower())
 
-OA# if str1 == str2:
+# if len(str1) != len(str2):
+#     print(False)
+# str1 = sorted(str1.lower()) 
+# str2 = sorted(str2.lower())
+
+# if str1 == str2:
 #     print(True)
-OA
-OA# str = "Hello manohar"
-# str = ""
-# ovels = "aeiou"
-# for i in str:
-OA#     if i.lower() in ovels:
-#         str += i
-# print(str)
+
+''' print the vowels from the original_str.'''
+
+# original_str = "Hello manohar"
+# vowels = "aeiou"
+# new_str = ""
+
+# for char in original_str:
+#     if char.lower() in vowels:
+#         new_str += char
+
+# print(new_str)
+
+'''characters of the input string str into two categories: 
+   vowels and consonants. It then prints the vowels and consonants separately.'''
 
 # str = "Hello manohar"
 
@@ -524,6 +582,9 @@
 #         conso += char
 # print(vowels, conso)
 
+'''calculates the square root of each element in the input_list 
+   and stores the results in a new list sqrt_list.'''
+# Method 1
 
 # import math
 
@@ -534,13 +595,16 @@
 #     sqrt_list.append(math.sqrt(i))
 # print(sqrt_list)
 
+# Method 2
+
 # import math
 
 # input_list = [2, 3, 1, 88, 22, 15]
 # sqrt_list = [math.sqrt(num) for num in input_list]
 # print(sqrt_list)
 
-# Here's a Python program that prints prime numbers for every 10 numbers:
+''' Here's a Python program that prints prime numbers for every 10 numbers'''
+
 # import math
 
 # def fun_prime(num):
@@ -560,17 +624,19 @@
 
 # print_prime(1, 100)
 
+'''Find the missing number'''
+
 # num = [1,2,3,4,6,7,8]
+
 # n = len(num) + 1
-
 # excp_num = n * (n + 1) // 2
-
 # actual_sum = sum(num)
-
 # missing = excp_num - actual_sum
 
 # print(missing)
 
+'''defines a function merge_and_sort_lists that merges and 
+   sorts two input lists, list1 and list2, into a single merged and sorted list.'''
 
 # def merge_and_sort_lists(list1, list2):
 #     merged_list = []
@@ -600,6 +666,8 @@
 # merged_and_sorted = merge_and_sort_lists(list1, list2)
 # print("Merged and sorted list:", merged_and_sorted)
 
+'''sorting a list l in descending order and then printing 
+the element at the 2nd position (0-based index) in the sorted list.'''
 
 # l = [12,13,5,2,6,7,8]
 
@@ -607,24 +675,33 @@
 # list_sort = sort[::-1]
 # print(list_sort[2])
 
+''' removing duplicates from sublists within the 2D list k 
+    and storing the modified sublists in both sub_list and k_list.'''
+
 # k = [
-#     [123, 234, 345, 234, 321, 444], 
-#     [456, 123, 434, 567, 678, 678, 123], 
+#     [123, 234, 345, 234, 321, 444],
+#     [456, 123, 434, 567, 678, 678, 123],
 #     [456, 345, 333, 888, 777, 456, 999, 222],
-#     ]
- 
+# ]
+
+# # Using sub_list to store modified sublists without duplicates
 # sub_list = []
 # for i in k:
-#     list(set(i))
-#     sub_list.append(i)
+#     sub_list.append(list(set(i)))
 
+# print("Sublist with duplicates removed:")
 # print(sub_list)
+
+# # Using k_list to store modified sublists without duplicates
 # k_list = []
 # for i in k:
-#     i = set(i)
-#     k_list.append(i)
+#     k_list.append(list(set(i)))
+
+# print("\nk_list with duplicates removed:")
 # print(k_list)
-    
+
+'''separates the elements of a tuple t into two lists: 
+   int_t for integer elements and str_t for string elements'''
 
 # t = (123, 'abc', 'def', 345, 'sss', 999)
 # int_t = []
@@ -633,11 +710,15 @@
 # for i in t:
 #     if type(i) == int:
 #         int_t.append(i)
-#     else:
-#         type(i) == str
+#     elif type(i) == str:
 #         str_t.append(i)
-# print(int_t, str_t)
 
+# print("Integer elements:", int_t)
+# print("String elements:", str_t)
+
+'''separates the elements of list l into two lists:
+   l2 for elements equal to 1 and l3 for elements not equal to 1.
+   Then, it concatenates the two lists to produce the final result. '''
 
 # l = [0, 1, 3, 0, 1, 2, 0, 1, 2, 3, 4, 1, 6, 3]
 # l2 = []
@@ -650,6 +731,7 @@
 #         l3.append(i)
 # print(l2+l3)
 
+'''reverses a string string and then prints the character at the 1st index of the reversed string.'''
 
 # string = "Manohar"
 # rev_str = " "
@@ -657,6 +739,8 @@
 #     rev_str += string[i]
 # print(rev_str[1])
 
+'''rearranges the elements in the list l by moving all the 1 
+   values to the beginning of the list while preserving the order of other elements.'''
 
 # l = [0, 1, 3, 0, 1, 2, 0, 1, 2, 3, 4, 1, 6, 3]
 # output = []
@@ -669,6 +753,8 @@
 #         output.append(i)
 
 # print(output)
+
+'''merges and sorts two lists, list1 and list2, into a single list output.'''
 
 # list1 = [1, 5, 6, 9, 11]
 # list2 = [3, 4, 7, 8, 10]
@@ -687,6 +773,8 @@
 
 # print(output)
 
+'''swaps the case (changes uppercase letters to lowercase and vice versa) 
+  of each character in the string str1 while leaving non-alphabetic characters unchanged.'''
 
 # str1="Great Power"
 # res = " "
@@ -701,12 +789,18 @@
 
 # print(res)
 
+'''removes all non-alphanumeric characters (anything that is not a letter or digit) 
+   from the string string and stores the result in a new string str.'''
+
 # string = "Ge;ek * s:fo ! r;Ge * e*k:s !"
 # str = ""
 # for i in string:
 #     if i.isalnum():
 #         str += i
 # print(str)
+
+''' first filters out non-alphabetic characters from the string, 
+    and then it swaps the case of the alphabetic characters.'''
 
 # string = "Ge;ek * s:fo ! r;Ge * e*k:s !"
 # result = ""
@@ -724,9 +818,6 @@
 #     else:
 #         res += result[j]
 # print(res)
-
-
-
 # print(result)
 
 # def factorial(n):
@@ -736,22 +827,25 @@
 #     return res
 # print(factorial(3))
 
+''' calculate the factorial of a given number num using recursion.'''
 
 # def rec_fact(n):
 #     if n == 1:
-#         return n
+#         return 1
 #     else:
 #         res = n * rec_fact(n - 1)
 #         return res
-# num = int(input("enter number: "))
+
+# num = int(input("Enter a number: "))
 
 # if num < 0:
-#     print("not exist")
+#     print("Factorial does not exist for negative numbers.")
 # elif num == 0:
-#     print(1)
+#     print("Factorial of 0 is 1.")
 # else:
-#     print("{num} is: ", rec_fact(num))
+#     print(f"{num}! is:", rec_fact(num))
 
+'''print prime numbers within a specified range, from lower to upper.'''
 
 # lower = 10
 # upper = 100
@@ -765,7 +859,14 @@
 #                break
 #        else:
 #            print(num)
-        
+
+'''merges two dictionaries d1 and d2 into a new dictionary d12, 
+   ensuring that if keys are common between d1 and d2, their values 
+   are stored in a list within d12. If a key exists only in one of 
+   the dictionaries, it is simply added to d12 with its corresponding value.'''
+
+# Exapmple 1
+#   
 # d1 = {"a": 1, "b": 2, "c": 3}
 # d2 = {"c": 4, "d": 5, "e": 6}
 
@@ -774,15 +875,17 @@
 # for key ,value in d1.items():
 #     if key in d2:
 #         d12[key] = [value, d2[key]]
-       
+
 #     else:
 #         d12[key] = value
-       
+
 # for key, value in d2.items():
 #     if key not in d12:
 #         d12[key] = value
 
 # print(d12)
+
+# Example 2
 
 # d1 = {"a":3, "b":4, "c":8, "d":2}
 # d2 = {"c":5, "d":1, "e":7, "f":9}
@@ -800,6 +903,7 @@
 #         d12[key] = value
 # print(d12)
 
+# Example 3
 
 # d1 = {"a": 3, "b": 4, "c": 8, "d": 2}
 # d2 = {"c": 5, "d": 1, "e": 7, "f": 9}
@@ -827,6 +931,8 @@
 
 # print(d123)
 
+# Example 4
+
 # d1 = {"a": 3, "b": 4, "c": 8, "d": 2}
 # d2 = {"c": 5, "d": 1, "e": 7, "f": 9}
 
@@ -846,6 +952,7 @@
 
 # print(d12)
 
+# Example 5
 
 # d1 = {"a": 3, "b": 4, "c": 8, "d": 2}
 # d2 = {"c": 5, "d": 1, "e": 7, "f": 9}
@@ -864,120 +971,10 @@
 
 # print(d12)
 
-# from binarytree import Node
-# root = Node(3)
-# root.left = Node(6)
-# root.right = Node(8)
+''' two dictionaries, d1 and d2, and you want to perform various 
+    operations like merging the dictionaries, extracting values, and extracting keys. '''
 
-# # Getting binary tree
-# print('Binary tree :', root)
-
-# # Getting list of nodes
-# print('List of nodes :', list(root))
-
-# # Getting inorder of nodes
-# print('Inorder of nodes :', root.inorder)
-
-# # Checking tree properties
-# print('Size of tree :', root.size)
-# print('Height of tree :', root.height)
-
-# # Get all properties at once
-# print('Properties of tree : \n', root.properties)
-
-
-# # Creating binary tree
-# from given list
-
-
-# from binarytree import build
-
-
-# # List of nodes
-# nodes =[3, 6, 8, 2, 11, None, 13]
-
-# # Building the binary tree
-# binary_tree = build(nodes)
-# print('Binary tree from list :\n',
-# 	binary_tree)
-
-# # Getting list of nodes from
-# # binarytree
-# print('\nList from binary tree :',
-# 	binary_tree.values)
-
-
-# class Node:
-#     def __init__(self, value):
-#         self.value = value
-#         self.left = None
-#         self.right = None
-
-
-# def insert(root, value):
-#     if root is None:
-#         return Node(value)
-#     elif value < root.value:
-#         root.left = insert(root.left, value)
-#     else:
-#         root.right = insert(root.right, value)
-#     return root
-
-
-# def print_tree(root, level=0):
-#     if root is not None:
-#         print_tree(root.right, level + 1)
-#         print("   " * level + str(root.value))
-#         print_tree(root.left, level + 1)
-
-
-# # Create the binary tree
-# root = None
-# root = insert(root, 4)
-# root = insert(root, 2)
-# root = insert(root, 6)
-# root = insert(root, 1)
-# root = insert(root, 3)
-# root = insert(root, 5)
-# root = insert(root, 7)
-
-# # Print the tree
-# print("Binary Tree:")
-# print_tree(root)
-
-# str = "tutorialspoint"
-# # initializing a list to add all the duplicate characters
-# duplicate_char = []
-# for character in str:
-#    # check whether there are duplicate characters or not
-#    # returning the frequency of a character in the string
-#       if str.count(character) > 1:
-#    # append to the list if it is already not present
-#          if character not in duplicate_char:
-#             duplicate_char.append(character)
-# print(*duplicate_char)
-# import time
-# from selenium import webdriver
-# from webdriver_manager.chrome import ChromeDriverManager
-# from selenium.webdriver.common.by import By
-
-# driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-# driver.get("https://www.google.com/")
-
-# search_box = driver.find_element(By.NAME, "")
-# search_box.send_keys("salaar teaser")
-# search_box.submit()
-# time.sleep(2)
-    
-# num = [1,2,3,4,6,7,8,9]
-
-# n = len(num) + 1
-
-# exp = (n * (n + 1)) // 2
-# act = sum(num)
-# mis = exp - act
-# print(mis)
-
+# Method 1
 
 # d1= {'A1':1, 'A2':2,'A2':3, 'A3':4}
 # d2= {'B1':6,'B2':7,'B3':8,'B4':9} 
@@ -997,6 +994,7 @@
 #     q3.append(x)
 # print(q3)
 
+# Method 2
 
 # dict_1= {'A1':1, 'B1':2,'C1':3, 'D1':4}
 # dict_2= {'M':6,'N':7,'o':8,'p':9}
@@ -1013,6 +1011,8 @@
 # print(L)
 # print(L2)
 
+'''using the random module in Python to perform various random operations.'''
+
 # import random
 
 # numbers = [1, 2, 3, 4, 5]
@@ -1025,15 +1025,20 @@
 # random.shuffle(numbers)
 # print(numbers)
 
+'''Reverse a string'''
+
+# Method 1
 # str = "manohar"
 
 # print(str[::-1])
+
+# Method 2
 
 # rev_str = "".join(reversed(str))
 # print(rev_str)
 
 
-# Write a program to print Prime numbers in python
+'''Write a program to print Prime numbers in python'''
 
 # def is_prime(num):
 #     if num < 2:
@@ -1042,7 +1047,7 @@
 #         if num % i == 0:
 #             return False
 #         return True
-    
+
 # def print_prime_num(start, end):
 #     prim_num = []
 #     for num in range(start, end+1):
@@ -1052,7 +1057,9 @@
 
 # print_prime_num(1,20)
 
-
+'''find and store the key-value pairs where the values are unique 
+   in a new dictionary duplicate, and you also want to create a 
+   list temp to store the unique values.'''
 
 # test_dict = {'gfg': 10, 'is': 15, 'best': 20, 'for': 10, 'geeks': 20}
 
@@ -1066,6 +1073,7 @@
 # print(duplicate)
 # print(temp)
 
+'''In dictionary swapping the key and value'''
 
 # original_dict = {'a': 1, 'b': 2, 'c': 3}
 # swap_dict = {}
@@ -1073,14 +1081,18 @@
 #     swap_dict[value] = key
 # print(swap_dict)
 
+'''count the occurrences of the word "Nutanix" (case-insensitive) 
+   in a given text file. using regular expressions.'''
 
 # import re
 
-# with open("C:/Users/ManoharK-2768/Desktop/interview_queries.txt", "r", encoding="utf-8") as f:
+# with open("File path", "r", encoding="utf-8") as f:
 #     content = f.read()
 #     matches = re.findall(r"[nN]utanix", content)
 #     count = len(matches)
 #     print(count)
+
+'''finds and counts the number of permutations of the substring "mamal" within the string "x."'''
 
 # from itertools import permutations
 
@@ -1098,12 +1110,8 @@
 
 # print("Number of permutations of 'mamal' in 'x':", count)
 
-
-# str = "aaabbbbaaaaccccgggggg"
-
-# ct = max(str)
-# print(ct)
-
+'''finds the maximum repeated character(s) in a given 
+   string using the collections.Counter class.'''
 
 # from collections import Counter
 
@@ -1120,13 +1128,15 @@
 
 # print("Maximum repeated character(s):", max_chars)
 
+'''Swap the dictionary'''
+
 # dict = {"a":1, "b":2, "c":3, "d":4}
 
 # swap_dict = {}
 # li = []
 # for key, value in dict.items():
 #     li.append(value)
-    
+
 # for key, value in dict.items():
 #     if value == li[2]:
 #         swap_dict[value] = key
@@ -1134,6 +1144,8 @@
 #         swap_dict[key] = value
 # print(swap_dict)
 
+'''finds the character(s) with the maximum and minimum counts
+   in the given string using the collections.Counter class.'''
 
 # from collections import Counter
 
@@ -1150,86 +1162,72 @@
 # print(maxi)
 # print(mini)
 
-# def is_prime(num):
-#   if num < 2:
-#     return False
-#   for i in range(2, num):
-#     if num % i == 0:
-#       return False
-#     return True
-# def print_prime(n):
-#   for i in range(2, n+1):
-#     if is_prime(i):
-#       print(i)
 
-# print_prime(100)
-
+'''Squares of Numbers:'''
 
 # squares = [x ** 2 for x in range(1,6)]
 # print(squares)
+
+'''Filtering Even Numbers:'''
 
 # numbers = [1,2,3,4,5,6,7,8,9,10]
 # even_num = [x for x in numbers if x % 2 == 0]
 # print(even_num)
 
+'''Even and Odd Labeling:'''
+
 # even_odd = [x if x % 2 != 0 else "even" for x in numbers]
 # print(even_odd)
+
+'''Uppercase Letters from a String:'''
 
 # string = "Manohar Achari"
 # upper_case = [i.upper() for i in string if i.isalpha()]
 # print(upper_case)
 
+'''list comprehension is used to categorize elements in the list 
+   into three categories: "number" if an element is an integer, 
+   "string" if it's a string, and "tuple" if it's a tuple.'''
 
 # list = [1, 2, "manu", 3, "chari", (1,2,3)]
 
 # new_list = ["number" if isinstance(i, int) else "string" if isinstance(i, str) else "tuple" for i in list]
 # print(new_list)
 
-
-# d1 = {"a": 1, "b": 2, "c": 3}
-# d2 = {"c": 4, "d": 5, "e": 6}
-
-# merge_dict = {}
-
-# for key, value in d1.items():
-#     if key in merge_dict:
-#         merge_dict[key].append(value)
-#         print(merge_dict)
-#     else:
-#         merge_dict[key] = [value]
-
-# for key, value in d2.items():
-#     if key in merge_dict:
-#         merge_dict[key].append(value)
-#     else:
-#         merge_dict[key] = [value]
-
-# print(merge_dict)
+'''various string operations you performed using the re module:'''
 
 # import re
 # str = "Hello World"
-
+# #re.sub
 # sub_str = re.sub("World", "Manu", str)
+# #re.findall
 # find_str = re.findall("l", str)
+# #re.split
 # spl_str = re.split("l", str)
+# #re.search
 # se_str = re.search("He", str)
 # sp_str = re.search("o", str)
+# #re.match
 # match = re.match("Hello World", str)
 # print(sp_str.span())
 # print(match)
 
-# L = [2, 2, 1, 1, 1, 2, 2]
-# count_dict = {}
 
-# Count the occurrences of each number in the list
-# for num in L:
-#     if num in count_dict:
-#         count_dict[num] += 1
-#     else:
-#         count_dict[num] = 1
+'''counting the occurrences of each number in the list'''
+
+# from collections import Counter
+
+# L = [2, 2, 1, 1, 1, 2, 2]
+
+# # Use Counter to count occurrences of each number in the list
+# count_dict = Counter(L)
+
 # print(count_dict)
 
-# # Find the maximum count and corresponding number
+'''find the maximum count and the corresponding number from 
+   the count_dict is correct. It will correctly identify the 
+   number with the highest count in the list'''
+
 # max_count = 0
 # max_num = None
 
@@ -1241,6 +1239,7 @@
 # # Print the maximum repeated number
 # print("Maximum repeated number:", max_num)
 
+'''find and print the number with the highest count in the list L.'''
 
 # L = [2, 2, 1, 1, 1, 2, 2]
 
@@ -1249,10 +1248,13 @@
 # for num in L:
 #     count_dict[num] = count_dict.get(num, 0) + 1
 # print(count_dict)
+
 # max_num = max(count_dict, key=count_dict.get)
 
 # print("Maximum repeated number:", max_num)
 
+'''merge list1 and list2 correctly, creating a merged list with 
+   elements from both lists in the specified order.'''
 
 # list1 = [1, 3, 5]
 # list2 = [2, 4, 6, 8]
@@ -1268,7 +1270,7 @@
 #     j += 1
 
 # while i < len(list1):
-#     merged.append(list1[1])
+#     merged.append(list1[i])
 #     i += 1
 
 # while j < len(list2):
@@ -1277,72 +1279,37 @@
 
 # print(merged)
 
-# list1 = [1, 3, 5]
-# list2 = [2, 4, 6, 8]
+'''removes duplicates from the input list list and then prints the unique elements in reverse order.'''
 
-# new_list = [i for i in list1] + [i for i in list2]
-
-# print(new_list)
-
-# new_list = []
-# for i in list1:
-#     if i > new_list:
-#         new_list.append(i)
-# for i in list2:
-#     if i > new_list:
-#         new_list.append(i)
-# print(new_list)
-
-
-# string = "How to troubleshoot if you get exception"
-
-# rev_str = ""
-
-# for i in  range(len(string )-1, -1, -1):
-#     rev_str += string[i]
-
-# print(rev_str)
-
-# l1 = [2,4,6]
-# l2 = [1,3,5]
-
-# L = []
-# i, j = 0, 0
-
-# while i < len(l1) and j < len(l2):
-#     L.append(l1[i])
-#     i += 1
-#     L.append(l2[j])
-#     j += 1
-# while i < len(l1):
-#     L.append(l1[i])
-#     i += 1
-# while j < len(l2):
-#     L.append(l2[j])
-#     j += 1
-# print(L)
-
-
-# def remove_dupl(list):
+# def remove_duplicates(input_list):
 #     result = []
-#     rev_list = []
-#     for i in list:
-#         if i not in result:
-#             result.append(i)
+#     for item in input_list:
+#         if item not in result:
+#             result.append(item)
 #     print(result[::-1])
 
 # my_list = [1, 2, 3, 2, 4, 3, 5, 4, 6, 7, 6, 5]
-# remove_dupl(my_list)
+# remove_duplicates(my_list)
+
+
+'''creating a list called List that contains elements common to 
+   both my_list1 and my_list2 while removing duplicates.'''
 
 # my_list1 = [1, 2, 3, 4, 5]
 # my_list2 = [4, 5, 6, 7, 8]
 
-# List = []
+# common_elements = []
 
-# for i in my_list1:
-#     if i in my_list2 and i not in List:
-#         List.append(i)
-# print(List)
+# for item in my_list1:
+#     if item in my_list2 and item not in common_elements:
+#         common_elements.append(item)
+
+# print(common_elements)
+
+
+'''Defines two classes, A and B, demonstrating the use of abstract methods and inheritance.'''
+
+# Example 1: Abstract Base Class A and Subclass B
 
 # from abc import ABC,abstractmethod
 # class A(ABC):
@@ -1356,7 +1323,10 @@
 # obj = B()
 # obj.display()
 
+'''Defines two classes, Rectangle and Circle, demonstrating how to 
+   create objects and access methods in a more straightforward manner.'''
 
+# Example 2: Classes Rectangle and Circle
 
 # class Rectangle:
 #     def __init__(self, length, width):
@@ -1369,7 +1339,6 @@
 #     def perimeter(self):
 #         return 2 * (self.length + self.width)
 
- 
 
 # class Circle:
 #     def __init__(self, radius):
@@ -1381,7 +1350,6 @@
 #     def perimeter(self):
 #         return 2 * 3.14 * self.radius
 
- 
 
 # Creating objects
 # rectangle = Rectangle(5, 3)
@@ -1394,10 +1362,13 @@
 # print("Perimeter of the circle:", circle.perimeter())
 
 
+'''Defines a simple hierarchy of geometric shapes using Python's 
+   abstract base class (ABC) and abstract methods. The Shape class 
+   is an abstract base class with two abstract methods: area and perimeter. 
+   Subclasses like Rectangle and Circle inherit from Shape and provide 
+   concrete implementations for these methods.'''
 
 # from abc import ABC, abstractmethod
-
- 
 
 # class Shape(ABC):
 #     @abstractmethod
@@ -1408,7 +1379,6 @@
 #     def perimeter(self):
 #         pass
 
- 
 
 # class Rectangle(Shape):
 #     def __init__(self, length, width):
@@ -1421,7 +1391,6 @@
 #     def perimeter(self):
 #         return 2 * (self.length + self.width)
 
- 
 
 # class Circle(Shape):
 #     def __init__(self, radius):
@@ -1433,13 +1402,10 @@
 #     def perimeter(self):
 #         return 2 * 3.14 * self.radius
 
- 
 
 # # Creating objects
 # rectangle = Rectangle(5, 3)
 # circle = Circle(4)
-
- 
 
 # # Accessing abstract methods
 # print("Area of the rectangle:", rectangle.area())
@@ -1448,51 +1414,52 @@
 # print("Perimeter of the circle:", circle.perimeter())
 
 
+'''the elements of the list l, compares adjacent elements, 
+   and appends the maximum of each pair to the list l1. 
+   The try block helps avoid an IndexError when accessing l[i + 1], 
+   and you've correctly handled the case where the range is reached with the except block.'''
 
-# def factiorial(n):
-#     if n == 0:
-#         return 1
-#     else:
-#         return n * factiorial(n - 1)
-# def print_fact(limit):
-#     for i in range(1, limit + 1):
-#         print(factiorial(i))
-
-# print_fact(5)
-
-# l=[1,2,4,2,3,4,6]
-# l1=[]
+# l = [1, 2, 4, 2, 3, 4, 6]
+# l1 = []
 
 # try:
-#     for i in l:
-#         if l[i]>=l[i+1]:
-#             l1.append(i)
+#     for i in range(len(l) - 1):
+#         if l[i] >= l[i + 1]:
+#             l1.append(l[i])
 #         else:
-#             l1.append(l[i+1])
-
-# except:
-#     print("range reached")
+#             l1.append(l[i + 1])
+# except IndexError:
+#     print("Range reached")
 
 # print(l1)
 
 
+'''Replace the small x to capital X'''
+
 # import re
 # str_1 = "nutanix"
-# print(str_1.replace("x", "X"))
 
+# str_1 = str_1.replace("x", "X")
 # print(str_1)
 
-# L1 = [1,2,3,4,1,2,3,7,8]
-# L = sorted(L1)
-# List1 = []
-# for i in range(len(L)):
-#     # print(L[i])
-#     if i in List1:
-#         print("true")
-#     else:
-#         print("false")
-# print(List1) 
 
+'''check whether the index i is already present in the List1.'''
+
+# L1 = [1, 2, 3, 4, 1, 2, 3, 7, 8]
+# seen = set()
+# duplicates = []
+
+# for num in L1:
+#     if num in seen:
+#         duplicates.append(num)
+#     else:
+#         seen.add(num)
+
+# print("Duplicate elements:", duplicates)
+
+
+'''counts the occurrences of each number in the list L 
+   and stores the counts in a dictionary called count_dict.'''
 
 # L = [2, 2, 1, 1, 1, 2, 2]
 # count_dict = {}
@@ -1505,79 +1472,7 @@
 # print(count_dict)
 
 
-# L1 = [1,2,3,4,1,2,3,7,8]
-
-# cd = {}
-
-# for i in L1:
-#     if i in cd:
-#         cd[i] += 1
-#     else:
-#         cd[i] = 1
-# print(cd)
-
-
-
-    
-# string = "manohar how are you"
-# str1 = string.count("o")
-# print(str1)
-
-
-
-# L1 = [1,2,3,4,1,2,3,7,8]
-# L = []
-# for i in L1:
-#     if i not in L:
-#         L.append(i)
-# print(L)
-
-# d1 = {"a":1, "b":2, "c":3}
-# d2 = {"c":4, "d":5, "e":6}
-# d12 = {}
-# for key, value in d1.items():
-#     if key in d2:
-#         d12[key] = [value, d2[key]]
-#     else:
-#         d12[key] = value
-# for key, value in d2.items():
-#     if key not in d12:
-#         d12[key] = [value]
-#     else:
-#         d12[key] = value
-# print(d12)
-
-
-# d1 = {"a": 1, "b": 2, "c": 3}
-# d2 = {"c": 4, "d": 5, "e": 6}
-
-# d12 = {}
-
-# for key, value in d1.items():
-#     if key in d2:
-#         d12[key] = [value, d2[key]]
-#     else:
-#         d12[key] = value
-# for key, value in d2.items():
-#     if key not in d12:
-#         d12[key] = value
-
-# print(d12)
-
-
-# L = [1,2,3,2,3,1,1,2,3,2,2,1,3]
-
-# res = {}
-
-# for i in L:
-#     if i in res:
-#         res[i] += 1
-#     else:
-#         res[i] = 1
-
-# max_res = max(zip(res.values()))
-# print(max_res)
-
+'''Finds pairs of numbers from the list L whose sum is equal to K.'''
 
 # from itertools import combinations
 
@@ -1590,6 +1485,8 @@
 #         sum_pair.append(pair)
 # print(sum_pair)
 
+'''Finds the maximum repeated number in the list L and its count.'''
+
 # L = [2,2,1,1,1,2,2]
 # res = {}
 
@@ -1601,6 +1498,10 @@
 
 # max_num = max(zip(res.values(), res.keys()))
 # print(max_num)
+
+'''performs selection sort on the input list argument and sorts it 
+   in ascending order. The selection sort algorithm repeatedly 
+   finds the minimum element from the unsorted part of the list and moves it to the beginning.'''
 
 # def selection_sort(arr):
 #     n = len(arr)
@@ -1619,48 +1520,23 @@
 # print(arr)  # Output: [1, 2, 3, 5, 7, 9]
 
 
-# str1 = "manohar how are you"
-
-# vowels = "a,e,i,o,u"
-# res = ""
-# for i in str1:
-#     if i not in vowels:
-#         res += i
-# print(res)
-
-# string1 = "listen"
-# string2 = "silent"
-
-# st1 = string1.replace(" ", "").lower()
-# st2 = string2.replace(" ", "").lower()
-
-# if len(st1) != len(st2):
-#     print("false")
-
-# if sorted(st1) == sorted(st2):
-#     print("correct")
-# else:
-#     print("wrong")
-
-
-# def fact(n):
-#     if n == 0:
-#         return 1
-#     else:
-#         return n * fact(n-1)
-# num = 5
-# print(fact(num))
+'''extracting the date and time from the given string'''
 
 # import re
-# abc="gher/2021/ertdwererw/fold1/fold2/fold/3er/2023-07-19/h12:49"
+
+# abc = "gher/2021/ertdwererw/fold1/fold2/fold/2023-07-19/12:49"
 
 # date_pattern = r'\d{4}-\d{2}-\d{2}'
 # time_pattern = r'\d{1,2}:\d{2}'
 
-# res = re.findall(time_pattern,abc)
-# res2 = re.findall(date_pattern,abc)
-# print(res, res2)
+# res_date = re.findall(date_pattern, abc)
+# res_time = re.findall(time_pattern, abc)
 
+# print("Dates:", res_date)
+# print("Times:", res_time)
+
+
+'''separating vowels and consonants from an input string and counting their occurrences is correct.'''
 
 # def separate_vowels_consonants(input_string):
 #     vowels = "aeiouAEIOU"
@@ -1687,3 +1563,120 @@
 # print("Consonants:", consonants)
 # print("Vowel count:", vowel_count)
 # print("Consonant count:", consonant_count)
+
+############# Decorators ############
+
+'''Example of using a decorator called str_upper to modify 
+   the behavior of the print_str function. '''
+
+# def str_upper(func):
+#     def inner():
+#         str1 = func()
+#         return str1.upper()
+#
+#     return inner
+#
+#
+# @str_upper
+# def print_str():
+#     return "Hello World"
+#
+#
+# print(print_str())
+
+'''example of using a decorator called div_decorate 
+   to modify the behavior of a div function, which performs division.'''
+
+# def div_decorate(func):
+#     def inner(x, y):
+#         if y == 0:
+#             return "Give proper input"
+#         return func(x, y)
+#
+#     return inner
+#
+# @div_decorate
+# def div(a, b):
+#     return a / b
+#
+# print(div(2, 2))
+
+'''Decorator for example of multiple function'''
+
+# def multiple(func):
+#     def inner(x, y):
+#         if x ==0 or y ==0:
+#             return "Give a valid input"
+#         return func(x, y)
+#     return inner
+#
+# @multiple
+# def mult(a, b):
+#     return a * b
+# print(mult(20, 10))
+
+'''Defines two decorator functions, upper_id and split_id, 
+   and applies them to the ordinary function using decoraters'''
+
+# def upper_id(func):
+#     def inner():
+#         str1 = func()
+#         return str1.upper()
+#     return inner
+# def split_id(func):
+#     def wrapper():
+#         str2 = func()
+#         return str2.split()
+#     return wrapper
+#
+# @split_id
+# @upper_id
+# def ordinary():
+#     return "good morning"
+#
+# print(ordinary())
+
+
+'''Defined a nested decorator outer that takes an argument exm. 
+   The outer decorator returns another decorator called upper, 
+   which, in turn, decorates the ordinary function. '''
+
+# def outer(exm):
+#     def upper(func):
+#         def inner():
+#             str1 = func() + " " + exm
+#             return  str1.upper()
+#         return inner
+#     return upper
+#
+# @outer("manohar")
+# def ordinary():
+#     return "good morning"
+# print(ordinary())
+
+
+"""Implementing a rotation of a list to the right by k positions"""
+#Method 1
+'''
+L = [1,2,3,4,5]
+k = 2
+output = []
+
+for i in range(len(L) - k, len(L)):
+    output.append(L[i])
+for i in range(0, len(L) - k):
+    output.append(L[i])
+
+print(output)
+
+#Method 2
+
+from collections import deque
+
+L = [1,2,3,4,5]
+k = 2
+output = deque(L)
+output.rotate(k)
+L = list(output)
+print(L)
+'''
